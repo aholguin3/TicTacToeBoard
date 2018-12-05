@@ -157,14 +157,14 @@ TEST(TicTacToeBoard, getWinner_testInvalid)
 TEST(TicTacToeBoard, getWinner_testDraw)
 {
 	TicTacToeBoard board;
-	board.placePiece(2,0);
-	board.placePiece(0,0);
-	board.placePiece(0,1);
-	board.placePiece(1,0);
-	board.placePiece(1,1);
-	board.placePiece(2,1);
-	board.placePiece(1,2);
-	board.placePiece(0,2);
-	board.placePiece(2,2);
+	board.placePiece(2,0);//x
+	board.placePiece(0,0);//o
+	board.placePiece(0,1);//x
+	board.placePiece(1,0);//o
+	board.placePiece(1,1);//x
+	board.placePiece(2,1);//o
+	board.placePiece(1,2);//x
+	board.placePiece(0,2);//o
+	board.placePiece(2,2);//x
 	ASSERT_EQ(board.getWinner(), Blank);
 }
